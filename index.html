@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Poppins Font path -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Itim Font path-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Kalam Font path -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS PATH -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrsp path -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- Font Awesome path -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- CSS general path -->
+    <link rel="stylesheet" href="CSS/general.css" />
+    <!-- CSS main path -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <!-- CSS media path -->
+    <link rel="stylesheet" href="CSS/media.css" />
+    <!-- CSS icon path -->
+    <link rel="icon" href="img/IMG-20230129-WA0009.jpg" />
+    <title>Eissa El-Emam</title>
+  </head>
+  <body>
+    <!-- START OF REGION LODING PAGE -->
+    <div class="loding d-none">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+    <!-- END OF REGION LODING PAGE -->
+
+    <!-- START OF REGION SECTION NAV -->
+    <nav
+      class="active rounded-4 position-fixed mt-2 d-flex justify-content-center align-items-center"
+      id="nav-bar"
+    >
+      <ul>
+        <!-- <li>
+          <a href="#home">
+            <img
+              src="img/IMG-20230128-WA0114.jpg"
+              alt="navbar image"
+              class="rounded-circle"
+          /></a>
+        </li> -->
+
+        <li>
+          <a id="contact-link" href="#contact"
+            ><i class="fa-solid fa-phone fa-2x"></i
+          ></a>
+        </li>
+
+        <li>
+          <a id="port-link" href="#portfolio"
+            ><i class="fa-solid fa-envelope fa-2x"></i
+          ></a>
+        </li>
+
+        <li>
+          <a id="about-link" href="#about"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+
+        <li>
+          <a id="home-link" href="#home"
+            ><i class="fa-solid fa-house-chimney fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+
+      <button class="btn" id="nav-btns">
+        <i id="close" class="fa-solid fa-xmark d-none fa-2x"></i>
+        <i id="open" class="fa-solid fa-bars me-3 fa-2x"></i>
+      </button>
+    </nav>
+    <!-- END OF REGION SECTION NAV -->
+
+    <!-- START OF REGION SECTION HEADER -->
+    <header class="home pt-5 mb-5 position-relative" id="home">
+      <div class="styleBg"></div>
+      <div class="container py-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-7">
+            <div
+              class="home-info me-5"
+              data-aos="fade-right"
+              data-aos-duration="2500"
+            >
+              <h2>H<span>i</span>, There</h2>
+              <h1>I'm <span id="auto-play"></span></h1>
+              <p>
+                I'm a web develober & front-end developer focused on crafting
+                clean & user friendly expriences, I'm passionate about building
+                excellent software that improves the lives of those around me.
+              </p>
+              <div class="cv-btn">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1cVsSFWvR9rDzS9SXoZg9ECY1I7jm9eRY"
+                  download
+                  class="btn my-3 px-4"
+                  >Download Cv</a
+                >
+              </div>
+              <div
+                class="social-links w-50 mt-2 d-flex justify-content-between"
+              >
+                <a
+                  href="https://www.linkedin.com/in/eissa-elemam-376734269/"
+                  class="btn border"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-2x fa-linkedin"></i>
+                </a>
+
+                <a
+                  href="https://github.com/Eissa44"
+                  class="btn border"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-2x fa-github-square"></i>
+                </a>
+
+                <a
+                  href="https://web.facebook.com/profile.php?id=100004158580162"
+                  class="btn border"
+                  target="_blank"
+                  ><i class="fa-brands fa-2x fa-facebook"></i
+                ></a>
+
+                <a
+                  href="mailto:eissaelemam67@gmail.com
+                "
+                  class="btn border"
+                  target="_blank"
+                  ><i class="fa-solid fa-2x fa-envelope-open"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="home-img" data-aos-duration="3000" data-aos="fade-left">
+              <img
+                src="img/header/5V3A1199.jpg"
+                alt="home image"
+                class="rounded-4 w-100 ms-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF REGION SECTION HEADER -->
+
+      <!-- START OF REGION SWITCHER COLOR -->
+      <aside id="side-bar" class="d-flex align-items-sm-start position-fixed">
+        <div class="setting">
+          <i class="fa-solid fa-gear fa-spin fa-2x" role="button"></i>
+        </div>
+        <div id="side-contents">
+          <div
+            class="side-content p-2 d-flex flex-column align-items-center gap-2"
+          >
+            <h3 class="px-2 pb-1 fs-4 border-bottom">Style switcher</h3>
+            <div class="box-color">
+              <span class="item-color rounded-circle" role="button"></span>
+              <span class="item-color rounded-circle" role="button"></span>
+              <span class="item-color rounded-circle" role="button"></span>
+              <span class="item-color rounded-circle" role="button"></span>
+            </div>
+
+            <div class="box-color">
+              <span class="item-color rounded-circle" role="button"></span>
+              <span class="item-color rounded-circle" role="button"></span>
+              <span class="item-color rounded-circle" role="button"></span>
+              <span class="item-color rounded-circle" role="button"></span>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- END OF REGION SWITCHER COLOR -->
+
+      <!-- START OF REGION SWITCHER MOOD -->
+      <div
+        class="mode-command position-fixed d-flex justify-content-center align-items-center z-3"
+      >
+        <div>
+          <i id="light" class="fa-regular fa-sun fa-2x" role="button"></i>
+          <i id="dark" class="fa-solid fa-moon fa-2x d-none" role="button"></i>
+        </div>
+      </div>
+      <!-- END OF REGION SWITCHER MOOD -->
+
+      <!-- START OF REGION AROW DOWN -->
+      <a
+        href="#about"
+        class="go-down position-absolute translate-middle-x rounded-4"
+      >
+        <i class="fa-solid fa-angles-down fa-3x"></i>
+        <!--      data-aos="fade-down"
+        data-aos-duration="3000" -->
+      </a>
+      <!-- END OF REGION AROW DOWN -->
+
+      <!-- START OF REGION UPAROW -->
+      <a
+        href="#home"
+        class="go-up translate-middle-x position-fixed rounded-circle"
+        ><i class="fa-sharp fa-solid fa-arrow-up fa-2x"></i
+      ></a>
+      <!-- END OF REGION UPAROW -->
+    </header>
+    <!-- END OF REGION SECTION HEADER -->
+
+    <!-- START OF REGION SECTION ABOUT -->
+    <section class="about py-5" id="about">
+      <div class="container py-5">
+        <div class="main-section-head position-relative text-center mt-4">
+          <h2>About <span>Me</span></h2>
+          <h3 class="">About <span>Me </span></h3>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-6">
+            <div
+              class="porsonal-info-right"
+              data-aos="fade-up-right"
+              data-aos-duration="1300"
+            >
+              <h3>Personal Information</h3>
+              <div class="list-info d-flex gap-5">
+                <ul class="d-flex flex-column gap-4 p-0">
+                  <li>
+                    <strong>Name:</strong> <br />
+                    <span>Eissa Mohamed ElEmam</span>
+                  </li>
+                  <li>
+                    <strong>Address:</strong> <br />
+                    <span>6th of October, Egypt</span>
+                  </li>
+                  <li>
+                    <strong>Email:</strong> <br />
+                    <a href="#">Eissa El-Eamm</a>
+                  </li>
+                  <li>
+                    <strong>GitHub:</strong> <br />
+                    <a href="https://github.com/Eissa44">Eissa44</a>
+                  </li>
+                </ul>
+
+                <ul class="d-flex flex-column gap-4">
+                  <li>
+                    <strong>Age:</strong> <br />
+                    <span>25 years old</span>
+                  </li>
+                  <li>
+                    <strong>Languages:</strong> <br />
+                    <span>Arabic, English</span>
+                  </li>
+                  <li>
+                    <strong>Phone:</strong> <br />
+                    <a href="#">+201117006725</a>
+                  </li>
+                  <li>
+                    <strong>Linkedin:</strong> <br />
+                    <a href="#">Eissa ElEmam</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="personal-info-left d-flex flex-column gap-4"
+              data-aos="fade-up-left"
+              data-aos-duration="1700"
+            >
+              <div class="div-one border border-2 p-3">
+                <h5 class="fw-bold">6</h5>
+                <span class="fs-4 pt-3">Months of Experience</span>
+              </div>
+
+              <div class="div-two border border-2 p-3">
+                <h5 class="fw-bold">15+</h5>
+                <span class="fs-4 pt-3">Completed projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="services">
+          <h3 class="second-title px-3 py-1 position-relative">services</h3>
+          <div class="row pt-5">
+            <div class="col-md-7 col-lg-4 mx-auto">
+              <div class="card">
+                <h3 class="card-header">dddd</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis aliquid repudiandae inventore laborum cumque nisi vero
+                facilis, iste reiciendis et culpa nemo dicta, temporibus
+                accusamus voluptas quae! Aliquid excepturi consequuntur ipsa
+                dolorem enim dolor inventore quidem earum illo corrupti
+                veritatis praesentium esse molestiae, accusamus dolorum. Enim
+                necessitatibus nam odit ipsa.
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-4 mx-auto">
+              <div class="card">
+                <h3 class="card-header">dddd</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis aliquid repudiandae inventore laborum cumque nisi vero
+                facilis, iste reiciendis et culpa nemo dicta, temporibus
+                accusamus voluptas quae! Aliquid excepturi consequuntur ipsa
+                dolorem enim dolor inventore quidem earum illo corrupti
+                veritatis praesentium esse molestiae, accusamus dolorum. Enim
+                necessitatibus nam odit ipsa.
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-4 mx-auto">
+              <div class="card">
+                <h3 class="card-header">dddd</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis aliquid repudiandae inventore laborum cumque nisi vero
+                facilis, iste reiciendis et culpa nemo dicta, temporibus
+                accusamus voluptas quae! Aliquid excepturi consequuntur ipsa
+                dolorem enim dolor inventore quidem earum illo corrupti
+                veritatis praesentium esse molestiae, accusamus dolorum. Enim
+                necessitatibus nam odit ipsa.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="shills">
+          <h3 class="second-title px-3 py-1 position-relative">
+            Techniacl skills
+          </h3>
+        </section>
+        <section class="education">
+          <h3 class="second-title px-3 py-1 position-relative">
+            Education & Experience
+          </h3>
+        </section>
+      </div>
+    </section>
+    <!-- END OF REGION SECTION ABOUT -->
+
+    <!-- START OF REGION SECTION PORTFOLIO -->
+    <section class="portfolio py-5 d-none" id="portfolio">
+      <div class="container py-5">
+        <div class="main-section-head position-relative text-center mt-4">
+          <h2>My <span>Portfolio</span></h2>
+          <h3>My <span>Portfolio </span></h3>
+        </div>
+        <p class="portfolio-p text-center fs-5 w-50 mx-auto pt-3">
+          In this section, I'll show you some of my projects. and some of the
+          features I know about them.
+        </p>
+      </div>
+    </section>
+    <!-- END OS REGION SECTION PORTFOLIO -->
+
+    <!-- START OF REGION SECTION CONTACT -->
+    <section class="contact py-5 d-none" id="contact">
+      <div class="container py-5">
+        <div class="main-section-head position-relative text-center mt-4">
+          <!-- Contact Me Get-in Touch-->
+          <h2>Get-in <span>Touch</span></h2>
+          <h3>Get-in <span>Touch </span></h3>
+        </div>
+        <p class="contact-p text-center fs-5 pt-3 w-75 mx-auto">
+          Feel free to get in touch with me. I'm always open to discussing new
+          projects, creative ideas, or opportunities to be a part of your
+          vision. And if you need help from me, don't be shy about contacting me
+          at any time. Especially beginner programmers
+        </p>
+      </div>
+    </section>
+    <!-- END OF REGION SECTION CONTACT -->
+
+    <!-- START OF REGION SECTION FOOTER -->
+    <footer class="foot d-none" id="foot"></footer>
+    <!-- END OF REGION SECTION FOOTER -->
+
+    <!-- jq JS PATH -->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <!-- JS Bootstrap path -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- AOS PATH -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- MAIN JS PATH -->
+    <script src="JS/main.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </body>
+</html>
