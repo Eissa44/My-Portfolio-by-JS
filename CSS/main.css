@@ -156,7 +156,6 @@
 
 #home .social-links a {
   background-color: var(--primaryTextLight);
-  border-color: var(--secondTextLight) !important ;
   color: #303030;
   transition: var(--transetionTime);
 }
@@ -226,10 +225,10 @@
 }
 
 .go-down i {
-  animation: bouncing 2s infinite;
+  animation: bouncingDown 2s infinite;
 }
 
-@keyframes bouncing {
+@keyframes bouncingDown {
   0%,
   10%,
   20%,
@@ -252,12 +251,38 @@
 
 /* START OF REGION UPAROW */
 .go-up {
+  /* background-color: var(--primaryTextLight); */
   color: var(--primaryTextLight);
-  padding: 20px;
+  border-color: var(--primaryTextLight) !important ;
+  padding: 1.5rem 1.6rem;
   bottom: 5px;
   left: 95%;
   transition: var(--transetionTime);
   border: 0.125rem solid var(--secondTextLight);
+}
+
+.go-up i {
+  animation: bouncingUp 2s infinite;
+}
+
+@keyframes bouncingUp {
+  30%,
+  40%,
+  60%,
+  70% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(-1.25rem);
+    opacity: 1;
+  }
 }
 /* END OF REGION UPAROW */
 /* END OF HEADER */
