@@ -1,9 +1,9 @@
 //START OF REGION LODING PAGE
 $(() => {
   $(".spinner").fadeOut(1500, () => {
-    $(".loding").slideUp(800, () => {
+    $(".loading").slideUp(800, () => {
       $("body").css("overflow", "auto", () => {
-        $(".loding").remove();
+        $(".loading").remove();
       });
     });
   });
