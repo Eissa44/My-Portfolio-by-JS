@@ -251,14 +251,12 @@
 
 /* START OF REGION UPAROW */
 .go-up {
-  /* background-color: var(--primaryTextLight); */
-  color: var(--primaryTextLight);
-  border-color: var(--primaryTextLight) !important ;
+  color: #d9e4ec;
   padding: 1.5rem 1.6rem;
   bottom: 5px;
   left: 95%;
   transition: var(--transetionTime);
-  border: 0.125rem solid var(--secondTextLight);
+  border: 0.125rem solid var(--primaryTextLight);
 }
 
 .go-up i {
