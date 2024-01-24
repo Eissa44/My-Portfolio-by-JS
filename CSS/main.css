@@ -165,6 +165,7 @@
   transform: translateY(0.5rem);
 }
 
+/* START OF REGION SIDE BAR */
 #side-bar {
   top: 20%;
   right: 0;
@@ -199,7 +200,9 @@
   padding: 10px;
   border-right: solid 0.5px #303030;
 }
+/* END OF REGION SIDE BAR */
 
+/* START OF REGION MOOD SWITCHER */
 #home .mode-command {
   background-color: var(--secondTextLight);
   color: #303030;
@@ -209,8 +212,9 @@
   border-radius: 10px 0 0 10px;
   border-right: solid 0.5px #303030;
 }
+/* END OF REGION MOOD SWITCHER */
 
-/* START OF REGION AROW DOWN */
+/* START OF REGION ARROW DOWN */
 .go-down {
   color: var(--primaryTextLight);
   bottom: 1.5rem !important;
@@ -247,9 +251,9 @@
     opacity: 0.3;
   }
 }
-/* END OF REGION AROW DOWN */
+/* END OF REGION ARROW DOWN */
 
-/* START OF REGION UPAROW */
+/* START OF REGION UPARROW */
 .go-up {
   color: #d9e4ec;
   padding: 1.5rem 1.6rem;
@@ -282,7 +286,7 @@
     opacity: 1;
   }
 }
-/* END OF REGION UPAROW */
+/* END OF REGION UPARROW */
 /* END OF HEADER */
 
 /* START OF ABOUT */
@@ -313,4 +317,3 @@
   text-wrap: balance;
 }
 /* END OF CONTACT */
-/* //////////////////// */
