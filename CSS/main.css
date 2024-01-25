@@ -218,7 +218,7 @@
 /* START OF REGION ARROW DOWN */
 .go-down {
   color: var(--primaryTextLight);
-  bottom: 1rem;
+  bottom: -1.2rem !important;
   left: 50%;
   padding: 1.2rem 0.5rem;
   border: 0.125rem solid var(--secondTextLight);
@@ -258,8 +258,8 @@
 .go-up {
   color: #d9e4ec;
   padding: 1.5rem 1.6rem;
-  bottom: 5px;
-  left: 95%;
+  bottom: -2.2rem !important;
+  right: -1.7rem;
   transition: var(--transetionTime);
   border: 0.125rem solid var(--primaryTextLight);
 }

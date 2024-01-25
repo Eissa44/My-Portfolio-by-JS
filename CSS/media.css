@@ -22,8 +22,12 @@
   }
 
   .go-down {
-    bottom: -3rem;
+    bottom: -5rem !important;
   }
+
+  /* .go-up {
+    left: 88%;
+  } */
 
   .porsonal-info-right {
     margin-top: 2.5rem;
@@ -62,7 +66,7 @@
   }
 
   .go-down {
-    bottom: -3.5rem;
+    bottom: -5rem !important;
   }
 
   .porsonal-info-right {
@@ -98,7 +102,7 @@
   }
 
   .go-down {
-    bottom: -3rem;
+    bottom: -3.5rem !important;
   }
 
   .porsonal-info-right {
@@ -116,6 +120,6 @@
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .go-down {
-    bottom: -3rem;
+    bottom: -5.5rem !important;
   }
 }
