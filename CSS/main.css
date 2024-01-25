@@ -158,6 +158,7 @@
   background-color: var(--primaryTextLight);
   color: #303030;
   transition: var(--transetionTime);
+  margin-right: 4px;
 }
 
 #home .social-links a:hover {
@@ -217,7 +218,7 @@
 /* START OF REGION ARROW DOWN */
 .go-down {
   color: var(--primaryTextLight);
-  bottom: 1.5rem !important;
+  bottom: 1rem;
   left: 50%;
   padding: 1.2rem 0.5rem;
   border: 0.125rem solid var(--secondTextLight);
@@ -303,6 +304,10 @@
   position: absolute;
   left: -0.01rem;
   font-family: "Kalam", cursive;
+}
+
+.animate-div {
+  overflow: hidden !important;
 }
 /* END OF ABOUT */
 
