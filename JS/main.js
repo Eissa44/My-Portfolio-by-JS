@@ -1,13 +1,13 @@
 //START OF REGION LODING PAGE
-$(() => {
-  $(".spinner").fadeOut(1500, () => {
-    $(".loading").slideUp(800, () => {
-      $("body").css("overflow", "auto", () => {
-        $(".loading").remove();
-      });
-    });
-  });
-});
+// $(() => {
+//   $(".spinner").fadeOut(1500, () => {
+//     $(".loading").slideUp(800, () => {
+//       $("body").css("overflow", "auto", () => {
+//         $(".loading").remove();
+//       });
+//     });
+//   });
+// });
 //END OF REGION LODING PAGE
 
 // START OF RIGION NAVBAR
@@ -64,8 +64,6 @@ itemColor.on("click", (eventInfo) => {
     #home .cv-btn a,
     #home .social-links a,
     #home .social-links a:hover,
-    .second-title::before,
-    .second-title::after,
     .styleBg`
   ).css("backgroundColor", currentColor);
 });
@@ -103,4 +101,23 @@ darkMood.addEventListener("click", () => {
 //   let x = eventInfo.target.getAttribute("href");
 //   let y = $(x).offset().top;
 //   $("html,body").animate({ scrollTop: y }, 1000);
+// });
+
+// Start of arrow up
+$(window).scroll(function () {
+  let aboutOffset = $("#about").offset().top;
+  const currentScroll = $(window).scrollTop();
+  if (currentScroll > aboutOffset - 450) {
+    $(".go-up").fadeIn(1000);
+  } else {
+    $(".go-up").fadeOut(100);
+  }
+});
+
+// End of arrow up
+
+// $("a").click(function (e) {
+//   let aHref = e.target.getAttribute("href");
+//   let sectionOffset = $(aHref).offset.top;
+//   $("html,body").animate({ scrollTop: sectionOffset }, 8000);
 // });

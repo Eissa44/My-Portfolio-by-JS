@@ -262,6 +262,7 @@
   right: -1.7rem;
   transition: var(--transetionTime);
   border: 0.125rem solid var(--primaryTextLight);
+  display: none;
 }
 
 .go-up i {
