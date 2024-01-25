@@ -113,11 +113,12 @@ $(window).scroll(function () {
     $(".go-up").fadeOut(100);
   }
 });
-
 // End of arrow up
 
-// $("a").click(function (e) {
-//   let aHref = e.target.getAttribute("href");
-//   let sectionOffset = $(aHref).offset.top;
-//   $("html,body").animate({ scrollTop: sectionOffset }, 8000);
-// });
+// Start of scroll smoth
+$("#nav-bar ul li a,.go-down,.go-up").click(function (e) {
+  const currentLink = $(this).attr("href");
+  const currenOffset = $(currentLink).offset().top;
+  $("html,body").animate({ scrollTop: currenOffset }, 2000);
+});
+// End of scroll smoth
