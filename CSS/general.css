@@ -23,7 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--secondTextLight);
   transition: var(--transetionTime);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 a {

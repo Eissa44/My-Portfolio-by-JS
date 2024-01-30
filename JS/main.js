@@ -1,13 +1,13 @@
 //START OF REGION LODING PAGE
-// $(() => {
-//   $(".spinner").fadeOut(1500, () => {
-//     $(".loading").slideUp(800, () => {
-//       $("body").css("overflow", "auto", () => {
-//         $(".loading").remove();
-//       });
-//     });
-//   });
-// });
+$(() => {
+  $(".spinner").fadeOut(1500, () => {
+    $(".loading").slideUp(800, () => {
+      $("body").css("overflow", "auto", () => {
+        $(".loading").remove();
+      });
+    });
+  });
+});
 //END OF REGION LODING PAGE
 
 // START OF RIGION NAVBAR
