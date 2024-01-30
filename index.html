@@ -64,28 +64,37 @@
       <ul>
         <li>
           <a id="contact-link" href="#contact"
-            ><i class="fa-solid fa-phone fa-2x"></i
-          ></a>
+            ><i class="fa-solid fa-phone fa-2x"></i>
+            <span id="des-tool" class="position-absolute px-2 rounded-2"
+              >Contact</span
+            >
+          </a>
         </li>
 
         <li>
           <a id="port-link" href="#portfolio"
-            ><i class="fa-solid fa-envelope fa-2x"></i
-          ></a>
+            ><i class="fa-solid fa-envelope fa-2x"></i>
+            <span id="des-tool" class="position-absolute px-2 rounded-2"
+              >Portfolio</span
+            ></a
+          >
         </li>
 
         <li>
           <a id="about-link" href="#about"
-            ><i class="fa-solid fa-user fa-2x"></i
-          ></a>
+            ><i class="fa-solid fa-user fa-2x"></i>
+            <span id="des-tool" class="position-absolute px-2 rounded-2"
+              >About</span
+            >
+          </a>
         </li>
 
         <li>
           <a id="home-link" href="#home">
             <i class="fa-solid fa-house-chimney fa-2x"></i>
-            <!-- <span id="des-tool" class="position-absolute bg-danger px-1"
-              >home</span
-            > -->
+            <span id="des-tool" class="position-absolute px-2 rounded-2"
+              >Home</span
+            >
           </a>
         </li>
       </ul>
@@ -96,12 +105,19 @@
       </button>
     </nav>
     <!-- END OF REGION SECTION NAV -->
-    <!-- <div id="particles-js" class="position-fixed z-n1 w-100 vh-100">
-      <canvas>
-    </div> -->
+
     <!-- START OF REGION SECTION HEADER -->
     <header class="home pt-5 mb-5 position-relative" id="home">
+      <!-- <div id="particles-js" class="position-fixed top-0 end-0 bottom-0">
+        <canvas
+          class="particles-js-canvas-el"
+          width="318"
+          height="645"
+          style="width: 100%; height: 100%"
+        ></canvas>
+      </div> -->
       <div class="styleBg"></div>
+
       <div class="container py-5">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-7">
@@ -232,6 +248,7 @@
       ></a>
       <!-- END OF REGION UPAROW -->
     </header>
+
     <!-- END OF REGION SECTION HEADER -->
 
     <!-- START OF REGION SECTION ABOUT -->
@@ -316,9 +333,13 @@
             What I'm Doing
           </h3>
 
-          <div class="row">
+          <div class="row gy-3">
             <div class="col-lg-4">
-              <div class="card h-100 card-info">
+              <div
+                class="card h-100 card-info"
+                data-aos-duration="1000"
+                data-aos="fade-right"
+              >
                 <h3 class="card-header text-center">Web Development</h3>
                 <div
                   class="card-body d-flex justify-content-between align-items-center"
@@ -332,7 +353,11 @@
             </div>
 
             <div class="col-lg-4">
-              <div class="card h-100 card-info">
+              <div
+                class="card h-100 card-info"
+                data-aos-duration="1000"
+                data-aos="fade-down"
+              >
                 <h3 class="card-header text-center">Web Design</h3>
                 <div
                   class="card-body d-flex justify-content-between align-items-center"
@@ -347,7 +372,11 @@
             </div>
 
             <div class="col-lg-4">
-              <div class="card h-100 card-info">
+              <div
+                class="card h-100 card-info"
+                data-aos-duration="1000"
+                data-aos="fade-left"
+              >
                 <h3 class="card-header text-center">Angular Faremwork</h3>
                 <div
                   class="card-body d-flex justify-content-between align-items-center"
@@ -365,17 +394,116 @@
             </div>
           </div>
         </section>
-
-        <section class="shills">
+        <!-- START OF REGION SKILLS  -->
+        <section class="skills">
           <h3 class="second-title px-3 py-1 position-relative">
             Techniacl skills
           </h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="skill position-relative">
+                  <div class="outer rounded-circle">
+                    <div
+                      class="inner rounded-circle d-flex justify-content-center flex-column align-items-center"
+                    >
+                      <span class="fs-3">HTML</span>
+                      <div id="number" class="fs-3"></div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                    class="position-absolute top-0"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" class="stop1" />
+                        <stop offset="100%" class="stop2" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="skill-info"></div>
+              </div>
+            </div>
+          </div>
         </section>
+        <!-- END OF REGION SKILLS  -->
+
+        <!-- START OF REGION EDUCATION -->
         <section class="education">
           <h3 class="second-title px-3 py-1 position-relative">
             Education & Experience
           </h3>
+
+          <div class="container">
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <div class="resume-item position-relative">
+                  <div
+                    class="resume-icon rounded-circle position-absolute start-0 top-0 text-center"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="resume-date">May 2023 - Nov 2023</span>
+                  <h3 class="resume-subtitle">
+                    Internship <span> Route Academy </span>
+                  </h3>
+                  <p class="resume-description">
+                    Full Front-end Development Diploma with ReactJS Framework.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="resume-item position-relative">
+                  <div
+                    class="resume-icon rounded-circle position-absolute start-0 top-0 text-center"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="resume-date">May 2023 - Nov 2023</span>
+                  <h3 class="resume-subtitle">
+                    Internship <span> Route Academy </span>
+                  </h3>
+                  <p class="resume-description">
+                    Full Front-end Development Diploma with ReactJS Framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+        <!-- END OF REGION EDUCATION -->
       </div>
     </section>
     <!-- END OF REGION SECTION ABOUT -->
@@ -392,19 +520,19 @@
           features I know about them.
         </p>
       </div>
-      <div class="container">
+      <div class="container d-none">
         <div class="row">
           <ul
-            class="nav justify-content-center bg-danger w-25 mx-auto rounded-4"
+            class="nav justify-content-center bg-danger w-50 mx-auto rounded-4"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link active" aria-current="page" href="#">All</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">HTML, CSS, JavaScript</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Angular</a>
             </li>
           </ul>
         </div>

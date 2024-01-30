@@ -130,7 +130,18 @@ $(window).scroll(function () {
 // End of hidden arrow up
 // ///////////////
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-/* particlesJS.load("particles-js", "js/particles.json", function () {
-  console.log("callback - particles.js config loaded");
-});
- */
+// particlesJS.load("particles-js", "js/particles.json", function () {
+//   console.log("callback - particles.js config loaded");
+// });
+
+//START OF REGION SKILLS PROGRESS
+const num = document.getElementById("number");
+let counter = 0;
+setInterval(() => {
+  if (counter === 95) {
+    clearInterval();
+  } else {
+    counter += 1;
+    num.innerHTML = counter + "%";
+  }
+}, 20);

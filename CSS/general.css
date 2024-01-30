@@ -50,31 +50,32 @@ h6 {
 }
 
 :root {
-  --bgColorLight: #050a30;
+  --bgColorLight: rgb(5, 10, 48);
   --primaryBgLight: rgb(0, 12, 102, 1);
   --secondBgLight: rgb(5, 10, 48, 1);
-  --primaryTextLight: #07bafc;
+  --primaryTextLight: rgb(7, 186, 252);
   --secondTextLight: #d9e4ec;
   --thirdTextLight: #303030;
   --forthTextLight: #afc1d0;
-  --hoveringlight: #0695ca;
+  --hoveringlight: rgb(6, 149, 202);
   --backSpanColor: #07bbfc48;
-  --mainwidth: 90%;
   --transetionTime: all 0.6s;
-  /* --shadoww: ; */
-  /* scroll-behavior: smooth !important; */
+  --outerShadowOne: rgba(7, 186, 252, 0.7);
+  --outerShadowTow: rgba(6, 149, 202, 1);
 }
 
 .dark-mood {
   --bgColorLight: #030303;
   --primaryBgLight: rgb(3, 3, 3, 1);
   --secondBgLight: rgb(11, 19, 32, 1);
-  --primaryTextLight: #ff7300;
+  --primaryTextLight: rgb(255, 115, 0);
   --secondTextLight: #d9e4ec;
   --thirdTextLight: #1cbcf7;
   --hoveringlight: #afc1d0;
-  --hoveringlight: #b35000;
+  --hoveringlight: rgb(179, 80, 0);
   --backSpanColor: #ff730048;
+  --outerShadowOne: rgb(255, 115, 0, 0.7);
+  --outerShadowTow: rgb(179, 80, 0, 1);
 }
 /* END GENERAL STYLE */
 

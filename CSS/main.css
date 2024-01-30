@@ -1,6 +1,6 @@
 /* START OF REGION LODING PAGE  */
 .loading {
-  background-color: var(--secondTextLight);
+  background-color: #444;
   z-index: 9999;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
 }
 
 .spinner > div {
-  background-color: #333;
+  background-color: #07bafc;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -95,7 +95,6 @@
   margin: 0;
   width: 0;
   transition: var(--transetionTime) linear;
-  list-style-type: none;
 }
 
 #nav-bar.active ul {
@@ -105,11 +104,13 @@
 #nav-bar ul li {
   transform: rotateY(0deg);
   opacity: 0;
+  visibility: hidden;
   transition: var(--transetionTime) linear;
 }
 
 #nav-bar.active ul li {
   opacity: 1;
+  visibility: visible;
   transform: rotateY(360deg);
 }
 
@@ -123,23 +124,30 @@
   border: 0 !important;
   position: relative;
 }
-/* 
+
 #des-tool {
   transform: translateX(-50%);
-  bottom: -150% !important;
+  bottom: -180% !important;
   left: 50%;
   white-space: nowrap;
+  background-color: #fff;
+  display: none;
 }
 
 #des-tool::before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 50%;
-  transform: translateX(-50%);
-  border: 15px solid;
-  border-color: #000 #0000 #0000 #0000;
-} */
+  bottom: 80%;
+  transform: translateX(-50%) rotate(180deg);
+  border: 12px solid;
+  border-color: #fff #0000 #0000 #0000;
+}
+
+#nav-bar ul a:hover #des-tool {
+  display: block;
+}
+
 /* END OF REGION SECTION NAV */
 
 /* START OF REGION SECTION HEADER */
@@ -308,7 +316,7 @@
 /* END OF REGION UPARROW */
 /* END OF HEADER */
 
-/* START OF ABOUT */
+/* START OF REGION ABOUT */
 #about .personal-info-left h5 {
   font-size: 4.5rem;
   position: relative;
@@ -324,10 +332,6 @@
   font-family: "Kalam", cursive;
 }
 
-/* .animate-div {
-  overflow: hidden !important;
-} */
-
 #about .card-info {
   background: rgb(0, 11, 48);
   background: linear-gradient(
@@ -336,22 +340,93 @@
     rgba(0, 47, 75, 1) 75%
   );
   color: #fff;
-  transition: var(--transetionTime);
+  box-shadow: 10px 10px 15px -1px rgba(0, 80, 230, 0.15);
+  border: 2px solid #00cbe6ef;
 }
 
 #about .card-info P {
   text-wrap: pretty;
 }
-/* END OF ABOUT */
 
-/* START OF PORTFOLIO */
+/* START OF REGION SKILLS PROGRESS  */
+.skill {
+  width: 160px;
+  height: 160px;
+}
+
+.outer {
+  width: 160px;
+  height: 160px;
+  padding: 19px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px var(--outerShadowOne);
+}
+
+.inner {
+  width: 120px;
+  height: 120px;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px -1px var(--outerShadowOne),
+    -0.5px -0.5px 0px var(--outerShadowOne), 0.5px 0.5px 0px rgba(0, 0, 0, 0.2),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  transition: var(--transetionTime);
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 120;
+  }
+}
+
+.stop1,
+.stop2 {
+  stop-color: var(--primaryTextLight);
+  transition: var(--transetionTime);
+}
+/* END OF REGION SKILLS PROGRESS  */
+
+/* START OF REGION EDUCATION */
+.resume-item {
+  padding-left: 60px;
+}
+
+.resume-item:before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid var(--primaryTextLight);
+  inset-block: 0;
+  left: 20px;
+  transition: var(--transetionTime);
+}
+
+.resume-icon {
+  background-color: var(--primaryTextLight);
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  transition: var(--transetionTime);
+}
+/* END OF REGION EDUCATION */
+/* END OF REGION ABOUT */
+
+/* START OF REGION PORTFOLIO */
 #portfolio .portfolio-p {
   text-wrap: balance;
 }
-/* END OF PORTFOLIO */
+/* END OF REGION PORTFOLIO */
 
-/* START OF CONTACT */
+/* START OF REGION CONTACT */
 #contact .contact-p {
   text-wrap: balance;
 }
-/* END OF CONTACT */
+/* END OF REGION CONTACT */
