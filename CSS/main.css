@@ -123,6 +123,23 @@
   border: 0 !important;
   position: relative;
 }
+/* 
+#des-tool {
+  transform: translateX(-50%);
+  bottom: -150% !important;
+  left: 50%;
+  white-space: nowrap;
+}
+
+#des-tool::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+} */
 /* END OF REGION SECTION NAV */
 
 /* START OF REGION SECTION HEADER */
@@ -307,8 +324,23 @@
   font-family: "Kalam", cursive;
 }
 
-.animate-div {
+/* .animate-div {
   overflow: hidden !important;
+} */
+
+#about .card-info {
+  background: rgb(0, 11, 48);
+  background: linear-gradient(
+    30deg,
+    rgba(0, 11, 48, 1) 27%,
+    rgba(0, 47, 75, 1) 75%
+  );
+  color: #fff;
+  transition: var(--transetionTime);
+}
+
+#about .card-info P {
+  text-wrap: pretty;
 }
 /* END OF ABOUT */
 

@@ -1,17 +1,23 @@
 //START OF REGION LODING PAGE
-$(() => {
-  $(".spinner").fadeOut(1500, () => {
-    $(".loading").slideUp(800, () => {
-      $("body").css("overflow", "auto", () => {
-        $(".loading").remove();
-      });
-    });
-  });
-});
+// $(() => {
+//   $(".spinner").fadeOut(1500, () => {
+//     $(".loading").slideUp(800, () => {
+//       $("body").css("overflow", "auto", () => {
+//         $(".loading").remove();
+//       });
+//     });
+//   });
+// });
 //END OF REGION LODING PAGE
 
 // START OF RIGION NAVBAR
-const nav = document.getElementById("nav-bar");
+$("#nav-btns").click(() => {
+  $("#nav-bar").toggleClass("active");
+  $("#open").toggleClass("d-none");
+  $("#close").toggleClass("d-none");
+});
+
+/* const nav = document.getElementById("nav-bar");
 const close = document.getElementById("close");
 const open = document.getElementById("open");
 
@@ -25,8 +31,17 @@ close.addEventListener("click", () => {
   nav.classList.add("active");
   close.classList.add("d-none");
   open.classList.remove("d-none");
-});
+}); */
 // END OF RIGION NAVBAR
+
+// ابقي اشوف المشكلة فين هنااا/* START OF REGION GENERAL STYLE */
+// Start of scroll smoth
+$("#nav-bar ul li a,.go-down,.go-up").click(function (e) {
+  const currentLink = $(this).attr("href");
+  const currenOffset = $(currentLink).offset().top;
+  $("html,body").animate({ scrollTop: currenOffset }, 2000);
+});
+// End of scroll smoth
 
 //START OF REGION COLOR SWITCHER
 $(".setting").on("click", () => {
@@ -43,10 +58,6 @@ itemColor.eq(4).css("backgroundColor", "#888");
 itemColor.eq(5).css("backgroundColor", "#e92416");
 itemColor.eq(6).css("backgroundColor", "#d9a520");
 itemColor.eq(7).css("backgroundColor", "#fcd");
-
-//
-// #home .home-info h1 span,
-// #home .home-info h2 span
 
 itemColor.on("click", (eventInfo) => {
   let currentColor = $(eventInfo.target).css("backgroundColor");
@@ -81,8 +92,15 @@ var typed2 = new Typed("#auto-play", {
   loop: true,
 });
 
-// START OF REGION MOOD
-const lighMood = document.getElementById("light");
+// START OF REGION SWITCH MOOD
+
+$(".mode-command").click(function () {
+  $("body").toggleClass("dark-mood");
+  $("#light").toggleClass("d-none");
+  $("#dark").toggleClass("d-none");
+});
+
+/* const lighMood = document.getElementById("light");
 const darkMood = document.getElementById("dark");
 
 lighMood.addEventListener("click", () => {
@@ -95,15 +113,11 @@ darkMood.addEventListener("click", () => {
   lighMood.classList.remove("d-none");
   darkMood.classList.add("d-none");
   document.body.classList.toggle("dark-mood");
-});
+}); */
 
-// $("a[href^='#']").on("click", (eventInfo) => {
-//   let x = eventInfo.target.getAttribute("href");
-//   let y = $(x).offset().top;
-//   $("html,body").animate({ scrollTop: y }, 1000);
-// });
+// END OF REGION SWITCH MOOD
 
-// Start of arrow up
+// Start of hidden arrow up
 $(window).scroll(function () {
   let aboutOffset = $("#about").offset().top;
   const currentScroll = $(window).scrollTop();
@@ -113,12 +127,10 @@ $(window).scroll(function () {
     $(".go-up").fadeOut(100);
   }
 });
-// End of arrow up
-
-// Start of scroll smoth
-$("#nav-bar ul li a,.go-down,.go-up").click(function (e) {
-  const currentLink = $(this).attr("href");
-  const currenOffset = $(currentLink).offset().top;
-  $("html,body").animate({ scrollTop: currenOffset }, 2000);
+// End of hidden arrow up
+// ///////////////
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+/* particlesJS.load("particles-js", "js/particles.json", function () {
+  console.log("callback - particles.js config loaded");
 });
-// End of scroll smoth
+ */

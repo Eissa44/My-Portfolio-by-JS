@@ -23,7 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--secondTextLight);
   transition: var(--transetionTime);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {
@@ -50,7 +50,7 @@ h6 {
 }
 
 :root {
-  --bgColorLight: rgb(5, 10, 48);
+  --bgColorLight: #050a30;
   --primaryBgLight: rgb(0, 12, 102, 1);
   --secondBgLight: rgb(5, 10, 48, 1);
   --primaryTextLight: #07bafc;
@@ -61,11 +61,12 @@ h6 {
   --backSpanColor: #07bbfc48;
   --mainwidth: 90%;
   --transetionTime: all 0.6s;
+  /* --shadoww: ; */
   /* scroll-behavior: smooth !important; */
 }
 
 .dark-mood {
-  --bgColorLight: rgb(3, 3, 3);
+  --bgColorLight: #030303;
   --primaryBgLight: rgb(3, 3, 3, 1);
   --secondBgLight: rgb(11, 19, 32, 1);
   --primaryTextLight: #ff7300;

@@ -45,7 +45,7 @@
 
   <body>
     <!-- START OF REGION LODING PAGE -->
-    <div class="loading animate-div">
+    <div class="loading animate-div d-none">
       <div class="spinner">
         <div class="rect1"></div>
         <div class="rect2"></div>
@@ -81,9 +81,12 @@
         </li>
 
         <li>
-          <a id="home-link" href="#home"
-            ><i class="fa-solid fa-house-chimney fa-2x"></i
-          ></a>
+          <a id="home-link" href="#home">
+            <i class="fa-solid fa-house-chimney fa-2x"></i>
+            <span id="des-tool" class="position-absolute bg-danger px-1"
+              >home</span
+            >
+          </a>
         </li>
       </ul>
 
@@ -93,7 +96,9 @@
       </button>
     </nav>
     <!-- END OF REGION SECTION NAV -->
-
+    <!-- <div id="particles-js" class="position-fixed z-n1 w-100 vh-100">
+      <canvas>
+    </div> -->
     <!-- START OF REGION SECTION HEADER -->
     <header class="home pt-5 mb-5 position-relative" id="home">
       <div class="styleBg"></div>
@@ -101,7 +106,7 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-7">
             <div
-              class="home-info me-5 animate-div pb-3"
+              class="home-info me-5 overflow-x-hidden pb-3"
               data-aos="fade-right"
               data-aos-duration="2500"
             >
@@ -149,7 +154,8 @@
                 "
                   class="btn"
                   target="_blank"
-                  ><i class="fa-solid fa-2x fa-envelope-open"></i>
+                >
+                  <i class="fa-solid fa-2x fa-envelope-open"></i>
                 </a>
               </div>
             </div>
@@ -229,12 +235,13 @@
     <!-- END OF REGION SECTION HEADER -->
 
     <!-- START OF REGION SECTION ABOUT -->
-    <section class="about py-5 animate-div" id="about">
+    <section class="about py-5 overflow-x-hidden" id="about">
       <div class="container py-5">
         <div class="main-section-head position-relative text-center mt-4">
           <h2>About <span>Me</span></h2>
           <h3>About <span>Me </span></h3>
         </div>
+
         <div class="row pt-5">
           <div class="col-lg-6">
             <div
@@ -305,42 +312,55 @@
         </div>
 
         <section class="services">
-          <h3 class="second-title px-3 py-1 position-relative">services</h3>
-          <div class="row pt-5">
-            <div class="col-md-7 col-lg-4 mx-auto">
-              <div class="card">
-                <h3 class="card-header">dddd</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis aliquid repudiandae inventore laborum cumque nisi vero
-                facilis, iste reiciendis et culpa nemo dicta, temporibus
-                accusamus voluptas quae! Aliquid excepturi consequuntur ipsa
-                dolorem enim dolor inventore quidem earum illo corrupti
-                veritatis praesentium esse molestiae, accusamus dolorum. Enim
-                necessitatibus nam odit ipsa.
+          <h3 class="second-title px-3 py-1 position-relative">
+            What I'm Doing
+          </h3>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card h-100 card-info">
+                <h3 class="card-header text-center">Web Development</h3>
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <img src="img/icon-design.svg" alt="web development logo" />
+                  <p class="mb-0 ms-2">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-md-7 col-lg-4 mx-auto">
-              <div class="card">
-                <h3 class="card-header">dddd</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis aliquid repudiandae inventore laborum cumque nisi vero
-                facilis, iste reiciendis et culpa nemo dicta, temporibus
-                accusamus voluptas quae! Aliquid excepturi consequuntur ipsa
-                dolorem enim dolor inventore quidem earum illo corrupti
-                veritatis praesentium esse molestiae, accusamus dolorum. Enim
-                necessitatibus nam odit ipsa.
+
+            <div class="col-lg-4">
+              <div class="card h-100 card-info">
+                <h3 class="card-header text-center">Web Design</h3>
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <img src="img/icon-dev.svg" alt="web development logo" />
+                  <p class="mb-0 ms-2">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-md-7 col-lg-4 mx-auto">
-              <div class="card">
-                <h3 class="card-header">dddd</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis aliquid repudiandae inventore laborum cumque nisi vero
-                facilis, iste reiciendis et culpa nemo dicta, temporibus
-                accusamus voluptas quae! Aliquid excepturi consequuntur ipsa
-                dolorem enim dolor inventore quidem earum illo corrupti
-                veritatis praesentium esse molestiae, accusamus dolorum. Enim
-                necessitatibus nam odit ipsa.
+
+            <div class="col-lg-4">
+              <div class="card h-100 card-info">
+                <h3 class="card-header text-center">Angular Faremwork</h3>
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <img
+                    src="img/angular.svg"
+                    alt="web development logo"
+                    class="w-25"
+                  />
+                  <p class="mb-0 ms-2">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -361,7 +381,7 @@
     <!-- END OF REGION SECTION ABOUT -->
 
     <!-- START OF REGION SECTION PORTFOLIO -->
-    <section class="portfolio py-5 d-none" id="portfolio">
+    <section class="portfolio py-5" id="portfolio">
       <div class="container py-5">
         <div class="main-section-head position-relative text-center mt-4">
           <h2>My <span>Portfolio</span></h2>
@@ -371,6 +391,23 @@
           In this section, I'll show you some of my projects. and some of the
           features I know about them.
         </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <ul
+            class="nav justify-content-center bg-danger w-25 mx-auto rounded-4"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- END OS REGION SECTION PORTFOLIO -->
@@ -403,6 +440,8 @@
     <script src="JS/bootstrap.bundle.min.js"></script>
     <!-- AOS PATH -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--  -->
+    <script src="JS/particles.js"></script>
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- MAIN JS PATH -->
