@@ -37,6 +37,18 @@
     font-size: 3rem;
     width: 100%;
   }
+
+  .portfolio-p {
+    width: 100% !important;
+  }
+
+  .nav-pills {
+    width: 100% !important;
+  }
+
+  .contact-p {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -77,6 +89,18 @@
     font-size: 4.5rem;
     width: 100%;
   }
+
+  .portfolio-p {
+    width: 100% !important;
+  }
+
+  .nav-pills {
+    width: 75% !important;
+  }
+
+  .contact-p {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -111,6 +135,10 @@
 
   .contact-p {
     width: 100% !important;
+  }
+
+  .nav-pills {
+    width: 75% !important;
   }
 }
 

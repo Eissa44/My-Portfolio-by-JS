@@ -179,14 +179,16 @@
   background-color: var(--hoveringlight);
 }
 
-#home .social-links a {
+#home .social-links a,
+#contact .social-links a {
   background-color: var(--primaryTextLight);
   color: #303030;
   transition: var(--transetionTime);
   margin-right: 4px;
 }
 
-#home .social-links a:hover {
+#home .social-links a:hover,
+#contact .social-links a:hover {
   background-color: var(--hoveringlight);
   transform: translateY(0.5rem);
 }
@@ -416,6 +418,11 @@ circle {
   width: 40px;
   transition: var(--transetionTime);
 }
+
+.resume-date {
+  background-color: var(--resumeBG);
+  transition: var(--transetionTime);
+}
 /* END OF REGION EDUCATION */
 /* END OF REGION ABOUT */
 
@@ -423,10 +430,32 @@ circle {
 #portfolio .portfolio-p {
   text-wrap: balance;
 }
+
+.nav-pills {
+  background-color: var(--primaryTextLight);
+  transition: var(--transetionTime);
+}
+
+.nav-pills .nav-link {
+  color: #303030 !important;
+  background-color: inherit !important;
+}
+
 /* END OF REGION PORTFOLIO */
 
 /* START OF REGION CONTACT */
 #contact .contact-p {
   text-wrap: balance;
+}
+
+#contact .form-title::after {
+  content: "....";
+  bottom: -2rem;
+  position: absolute;
+  left: -0.01rem;
+  font-family: "Kalam", cursive;
+  color: var(--primaryTextLight);
+  font-size: 3.5rem;
+  transition: var(--transetionTime);
 }
 /* END OF REGION CONTACT */

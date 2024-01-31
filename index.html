@@ -45,7 +45,7 @@
 
   <body>
     <!-- START OF REGION LODING PAGE -->
-    <div class="loading animate-div">
+    <div class="loading animate-div d-none">
       <div class="spinner">
         <div class="rect1"></div>
         <div class="rect2"></div>
@@ -253,12 +253,11 @@
 
     <!-- START OF REGION SECTION ABOUT -->
     <section class="about py-5 overflow-x-hidden" id="about">
+      <div class="main-section-head position-relative text-center pt-5 mt-5">
+        <h2>About <span>Me</span></h2>
+        <h3>About <span>Me </span></h3>
+      </div>
       <div class="container py-5">
-        <div class="main-section-head position-relative text-center mt-4">
-          <h2>About <span>Me</span></h2>
-          <h3>About <span>Me </span></h3>
-        </div>
-
         <div class="row pt-5">
           <div class="col-lg-6">
             <div
@@ -443,7 +442,7 @@
 
           <div class="container">
             <div class="row gy-3">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="resume-item position-relative">
                   <div
                     class="resume-icon rounded-circle position-absolute start-0 top-0 text-center"
@@ -462,9 +461,11 @@
                       ></path>
                     </svg>
                   </div>
-                  <span class="resume-date">May 2023 - Nov 2023</span>
+                  <span class="resume-date px-3 my-2 rounded-3"
+                    >May 2023 - Nov 2023</span
+                  >
                   <h3 class="resume-subtitle">
-                    Internship <span> Route Academy </span>
+                    <strong>Internship</strong> Route Academy
                   </h3>
                   <p class="resume-description">
                     Full Front-end Development Diploma with ReactJS Framework.
@@ -472,7 +473,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <div class="resume-item position-relative">
                   <div
                     class="resume-icon rounded-circle position-absolute start-0 top-0 text-center"
@@ -491,9 +492,11 @@
                       ></path>
                     </svg>
                   </div>
-                  <span class="resume-date">May 2023 - Nov 2023</span>
+                  <span class="resume-date px-3 my-2 rounded-3"
+                    >May 2023 - Nov 2023</span
+                  >
                   <h3 class="resume-subtitle">
-                    Internship <span> Route Academy </span>
+                    <strong>Internship</strong> Route Academy
                   </h3>
                   <p class="resume-description">
                     Full Front-end Development Diploma with ReactJS Framework.
@@ -510,50 +513,216 @@
 
     <!-- START OF REGION SECTION PORTFOLIO -->
     <section class="portfolio py-5" id="portfolio">
-      <div class="container py-5">
-        <div class="main-section-head position-relative text-center mt-4">
-          <h2>My <span>Portfolio</span></h2>
-          <h3>My <span>Portfolio </span></h3>
-        </div>
-        <p class="portfolio-p text-center fs-5 w-50 mx-auto pt-3">
-          In this section, I'll show you some of my projects. and some of the
-          features I know about them.
-        </p>
+      <div class="main-section-head position-relative text-center mt-4">
+        <h2>My <span>Portfolio</span></h2>
+        <h3>My <span>Portfolio </span></h3>
       </div>
-      <div class="container d-none">
-        <div class="row">
-          <ul
-            class="nav justify-content-center bg-danger w-50 mx-auto rounded-4"
+      <p class="portfolio-p text-center fs-5 w-50 mx-auto pt-3">
+        In this section, I'll show you some of my projects. and some of the
+        features I know about them.
+      </p>
+
+      <ul
+        class="nav nav-pills mt-5 w-50 mx-auto rounded-3 d-flex justify-content-evenly"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#all"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
           >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">All</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">HTML, CSS, JavaScript</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Angular</a>
-            </li>
-          </ul>
+            All
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#hcj"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            HTML, CSS, JavaScript
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#angular"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Angular
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="all"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <div class="container pt-5">
+            <div class="row"></div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="hcj"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <div class="container pt-5">
+            <div class="row"></div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="angular"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          <div class="container pt-5">
+            <div class="row"></div>
+          </div>
         </div>
       </div>
     </section>
     <!-- END OS REGION SECTION PORTFOLIO -->
 
     <!-- START OF REGION SECTION CONTACT -->
-    <section class="contact py-5 d-none" id="contact">
+    <section class="contact py-5" id="contact">
+      <div class="main-section-head position-relative text-center mt-4">
+        <!-- Contact Me Get-in Touch-->
+        <h2>Get-in <span>Touch</span></h2>
+        <h3>Get-in <span>Touch </span></h3>
+      </div>
       <div class="container py-5">
-        <div class="main-section-head position-relative text-center mt-4">
-          <!-- Contact Me Get-in Touch-->
-          <h2>Get-in <span>Touch</span></h2>
-          <h3>Get-in <span>Touch </span></h3>
+        <div class="row">
+          <div class="col-md-5">
+            <h4 class="form-title position-relative mb-5 fs-3">
+              Don't be shy!
+            </h4>
+            <p class="contact-p fs-5">
+              Feel free to get in touch with me. I'm always open to discussing
+              new projects, creative ideas, or opportunities to be a part of
+              your vision. And if you need help from me, don't be shy about
+              contacting me at any time. Especially beginner programmers
+            </p>
+            <div class="social-links mt-5">
+              <a
+                href="https://www.linkedin.com/in/eissa-elemam-376734269/"
+                class="btn"
+                target="_blank"
+              >
+                <i class="fa-brands fa-2x fa-linkedin"></i>
+              </a>
+
+              <a href="https://github.com/Eissa44" class="btn" target="_blank">
+                <i class="fa-brands fa-2x fa-github-square"></i>
+              </a>
+
+              <a
+                href="https://web.facebook.com/profile.php?id=100004158580162"
+                class="btn"
+                target="_blank"
+                ><i class="fa-brands fa-2x fa-facebook"></i
+              ></a>
+
+              <a
+                href="mailto:eissaelemam67@gmail.com
+              "
+                class="btn"
+                target="_blank"
+              >
+                <i class="fa-solid fa-2x fa-envelope-open"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <h4 class="form-title position-relative mb-5 fs-3">Contact Me</h4>
+            <section class="contact-form d-none">
+              <form
+                action="https://formspree.io/f/xrgdzowj"
+                class="form"
+                data-form=""
+                method="POST"
+                autocomplete="off"
+              >
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="fullname"
+                    class="form-input form-control"
+                    placeholder="Full Name"
+                    required=""
+                    data-form-input=""
+                    autocomplete="off"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Email Address"
+                    required=""
+                    data-form-input=""
+                    autocomplete="off"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  class="form-input"
+                  placeholder="Your Message"
+                  required=""
+                  data-form-input=""
+                  autocomplete="off"
+                ></textarea>
+
+                <button
+                  class="form-btn"
+                  type="submit"
+                  disabled=""
+                  data-form-btn=""
+                  aria-label="Send Message"
+                >
+                  <ion-icon
+                    name="paper-plane"
+                    role="img"
+                    class="md hydrated"
+                    aria-label="paper plane"
+                  ></ion-icon>
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </section>
+          </div>
         </div>
-        <p class="contact-p text-center fs-5 pt-3 w-75 mx-auto">
-          Feel free to get in touch with me. I'm always open to discussing new
-          projects, creative ideas, or opportunities to be a part of your
-          vision. And if you need help from me, don't be shy about contacting me
-          at any time. Especially beginner programmers
-        </p>
       </div>
     </section>
     <!-- END OF REGION SECTION CONTACT -->

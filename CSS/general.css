@@ -22,7 +22,7 @@ body {
   height: 300rem;
   font-family: "Poppins", sans-serif;
   color: var(--secondTextLight);
-  transition: var(--transetionTime);
+  transition: var(--transetionTime) !important;
   overflow: hidden;
 }
 
@@ -53,7 +53,7 @@ h6 {
   --bgColorLight: rgb(5, 10, 48);
   --primaryBgLight: rgb(0, 12, 102, 1);
   --secondBgLight: rgb(5, 10, 48, 1);
-  --primaryTextLight: rgb(7, 186, 252);
+  --primaryTextLight: #07bafc;
   --secondTextLight: #d9e4ec;
   --thirdTextLight: #303030;
   --forthTextLight: #afc1d0;
@@ -62,13 +62,15 @@ h6 {
   --transetionTime: all 0.6s;
   --outerShadowOne: rgba(7, 186, 252, 0.7);
   --outerShadowTow: rgba(6, 149, 202, 1);
+  --scrollHovering: rgb(2, 14, 102);
+  --resumeBG: rgba(7, 187, 252, 0.475);
 }
 
 .dark-mood {
   --bgColorLight: #030303;
   --primaryBgLight: rgb(3, 3, 3, 1);
   --secondBgLight: rgb(11, 19, 32, 1);
-  --primaryTextLight: rgb(255, 115, 0);
+  --primaryTextLight: #ff7300;
   --secondTextLight: #d9e4ec;
   --thirdTextLight: #1cbcf7;
   --hoveringlight: #afc1d0;
@@ -76,6 +78,26 @@ h6 {
   --backSpanColor: #ff730048;
   --outerShadowOne: rgb(255, 115, 0, 0.7);
   --outerShadowTow: rgb(179, 80, 0, 1);
+  --scrollHovering: rgb(0, 42, 105);
+  --resumeBG: rgba(255, 115, 0, 0.475);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #303030;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollHovering);
+
+  border-radius: 50px;
+  transition: var(--transetionTime);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondBgLight);
 }
 /* END GENERAL STYLE */
 
