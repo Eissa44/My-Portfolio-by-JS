@@ -179,20 +179,6 @@
   background-color: var(--hoveringlight);
 }
 
-#home .social-links a,
-#contact .social-links a {
-  background-color: var(--primaryTextLight);
-  color: #303030;
-  transition: var(--transetionTime);
-  margin-right: 4px;
-}
-
-#home .social-links a:hover,
-#contact .social-links a:hover {
-  background-color: var(--hoveringlight);
-  transform: translateY(0.5rem);
-}
-
 /* START OF REGION SIDE BAR */
 #side-bar {
   top: 20%;
@@ -441,6 +427,27 @@ circle {
   background-color: inherit !important;
 }
 
+#portfolio .shadow {
+  top: 110%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #33333367;
+  transition: all 0.8s;
+}
+
+#portfolio .img-item img {
+  transition: all 0.6s;
+}
+
+#portfolio .img-item:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+#portfolio .img-item:hover .shadow {
+  top: 0 !important;
+}
+
 /* END OF REGION PORTFOLIO */
 
 /* START OF REGION CONTACT */
@@ -457,5 +464,20 @@ circle {
   color: var(--primaryTextLight);
   font-size: 3.5rem;
   transition: var(--transetionTime);
+}
+
+.form-btn {
+  background-color: var(--primaryTextLight);
+  color: #303030 !important;
+  transition: var(--transetionTime);
+}
+
+.form-btn:hover {
+  background-color: var(--hoveringlight);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem var(--primaryTextLight) !important;
+  border-color: initial !important;
 }
 /* END OF REGION CONTACT */

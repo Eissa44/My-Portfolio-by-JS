@@ -141,6 +141,7 @@
                   >Download Cv</a
                 >
               </div>
+
               <div class="social-links mt-2">
                 <a
                   href="https://www.linkedin.com/in/eissa-elemam-376734269/"
@@ -582,7 +583,62 @@
           tabindex="0"
         >
           <div class="container pt-5">
-            <div class="row"></div>
+            <div class="row gy-4">
+              <div class="col-lg-4">
+                <div
+                  class="img-item position-relative overflow-hidden rounded-3"
+                >
+                  <img src="img/1.jpg" alt="image pne" class="w-100" />
+                  <div
+                    class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
+                  >
+                    <h4 class="fs-4">Project Title</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div
+                  class="img-item position-relative overflow-hidden rounded-3"
+                >
+                  <img src="img/2.jpg" alt="image pne" class="w-100" />
+                  <div
+                    class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
+                  >
+                    <h4 class="text-muted fs-5 py-2">Category</h4>
+                    <h5>Project Title</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div
+                  class="img-item position-relative overflow-hidden rounded-3"
+                >
+                  <img src="img/3.jpg" alt="image pne" class="w-100" />
+                  <div
+                    class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
+                  >
+                    <h4 class="text-muted fs-5 py-2">Category</h4>
+                    <h5>Project Title</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div
+                  class="img-item position-relative overflow-hidden rounded-3"
+                >
+                  <img src="img/4.jpg" alt="image pne" class="w-100" />
+                  <div
+                    class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
+                  >
+                    <h4 class="text-muted fs-5 py-2">Category</h4>
+                    <h5>Project Title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -621,7 +677,7 @@
         <h3>Get-in <span>Touch </span></h3>
       </div>
       <div class="container py-5">
-        <div class="row contact-content gy-4">
+        <div class="row contact-content gy-4 gx-3">
           <div class="col-lg-5">
             <h4 class="form-title position-relative mb-5 fs-3">
               Don't be shy!
@@ -665,61 +721,56 @@
 
           <div class="col-lg-7">
             <h4 class="form-title position-relative mb-5 fs-3">Contact Me</h4>
-            <section class="contact-form d-none">
-              <form
-                action="https://formspree.io/f/xrgdzowj"
-                class="form"
-                data-form=""
-                method="POST"
-                autocomplete="off"
-              >
-                <div class="input-wrapper">
-                  <input
-                    type="text"
-                    name="fullname"
-                    class="form-input form-control"
-                    placeholder="Full Name"
-                    required=""
-                    data-form-input=""
-                    autocomplete="off"
-                  />
-
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-input"
-                    placeholder="Email Address"
-                    required=""
-                    data-form-input=""
-                    autocomplete="off"
-                  />
-                </div>
-
-                <textarea
-                  name="message"
-                  class="form-input"
-                  placeholder="Your Message"
+            <section class="contact-form row g-3">
+              <div class="col-lg-6">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control rounded-pill"
+                  placeholder="Full Name"
                   required=""
                   data-form-input=""
                   autocomplete="off"
-                ></textarea>
+                />
+              </div>
 
-                <button
-                  class="form-btn"
-                  type="submit"
-                  disabled=""
-                  data-form-btn=""
-                  aria-label="Send Message"
-                >
-                  <ion-icon
-                    name="paper-plane"
-                    role="img"
-                    class="md hydrated"
-                    aria-label="paper plane"
-                  ></ion-icon>
-                  <span>Send Message</span>
-                </button>
-              </form>
+              <div class="col-lg-6">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control rounded-pill"
+                  placeholder="Email Address"
+                  required=""
+                  data-form-input=""
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="col-lg-12">
+                <textarea
+                  name="massage"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  class="form-control rounded-4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <button
+                class="form-btn btn ms-auto w-25 ms-auto rounded-pill p-2"
+                type="submit"
+                data-form-btn=""
+                aria-label="Send Message"
+              >
+                <!-- <ion-icon
+                  name="paper-plane"
+                  role="img"
+                  class="md hydrated"
+                  aria-label="paper plane"
+                ></ion-icon> -->
+                <span>Send Message</span>
+              </button>
             </section>
           </div>
         </div>

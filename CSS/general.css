@@ -19,7 +19,7 @@ body {
     var(--secondBgLight) 60%
   );
   background-repeat: no-repeat;
-  height: 300rem;
+  /* height: 300rem; */
   font-family: "Poppins", sans-serif;
   color: var(--secondTextLight);
   transition: var(--transetionTime) !important;
@@ -228,5 +228,19 @@ h6 {
   z-index: -1;
   border-bottom-left-radius: 20px;
   transition: var(--transetionTime);
+}
+
+#home .social-links a,
+#contact .social-links a {
+  background-color: var(--primaryTextLight);
+  color: #303030;
+  transition: var(--transetionTime);
+  margin-right: 4px;
+}
+
+#home .social-links a:hover,
+#contact .social-links a:hover {
+  background-color: var(--hoveringlight);
+  transform: translateY(0.5rem);
 }
 /* END OF HEADER GENERAL STYLE */
