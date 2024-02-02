@@ -43,7 +43,7 @@
     <title>Eissa El-Emam</title>
   </head>
 
-  <body>
+  <body class="position-relative" id="over-event">
     <!-- START OF REGION LODING PAGE -->
     <div class="loading animate-div d-none">
       <div class="spinner">
@@ -583,17 +583,35 @@
           tabindex="0"
         >
           <div class="container pt-5">
-            <div class="row gy-4">
+            <div class="row gy-4 position-relative">
               <div class="col-lg-4">
                 <div
                   class="img-item position-relative overflow-hidden rounded-3"
                 >
                   <img src="img/1.jpg" alt="image pne" class="w-100" />
                   <div
+                    role="button"
                     class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
                   >
                     <h4 class="fs-4">Project Title</h4>
                   </div>
+                </div>
+
+                <!-- a -->
+                <div
+                  class="project-info rounded-3 p-5 position-absolute w-75 translate-middle top-50 start-50 d-none"
+                >
+                  <i
+                    id="close-info"
+                    class="btn fa-solid fa-xmark fa-2x position-absolute border p-3 rounded-4"
+                  ></i>
+
+                  <h1>I'm a modal window</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </p>
                 </div>
               </div>
 
@@ -603,11 +621,28 @@
                 >
                   <img src="img/2.jpg" alt="image pne" class="w-100" />
                   <div
+                    role="button"
                     class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
                   >
                     <h4 class="text-muted fs-5 py-2">Category</h4>
                     <h5>Project Title</h5>
                   </div>
+                </div>
+                <!-- a -->
+                <div
+                  class="project-info rounded-3 p-5 position-absolute w-75 translate-middle top-50 start-50 d-none"
+                >
+                  <i
+                    id="close-info"
+                    class="btn fa-solid fa-xmark fa-2x position-absolute border p-3 rounded-4"
+                  ></i>
+
+                  <h1>I'm a modal window</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </p>
                 </div>
               </div>
 
@@ -617,11 +652,28 @@
                 >
                   <img src="img/3.jpg" alt="image pne" class="w-100" />
                   <div
+                    role="button"
                     class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
                   >
                     <h4 class="text-muted fs-5 py-2">Category</h4>
                     <h5>Project Title</h5>
                   </div>
+                </div>
+                <!-- a -->
+                <div
+                  class="project-info rounded-3 p-5 position-absolute w-75 translate-middle top-50 start-50 d-none"
+                >
+                  <i
+                    id="close-info"
+                    class="btn fa-solid fa-xmark fa-2x position-absolute border p-3 rounded-4"
+                  ></i>
+
+                  <h1>I'm a modal window</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </p>
                 </div>
               </div>
 
@@ -631,11 +683,28 @@
                 >
                   <img src="img/4.jpg" alt="image pne" class="w-100" />
                   <div
+                    role="button"
                     class="shadow position-absolute d-flex justify-content-center align-items-center flex-column text-white"
                   >
                     <h4 class="text-muted fs-5 py-2">Category</h4>
                     <h5>Project Title</h5>
                   </div>
+                </div>
+                <!-- a -->
+                <div
+                  class="project-info rounded-3 p-5 position-absolute w-75 translate-middle top-50 start-50 d-none"
+                >
+                  <i
+                    id="close-info"
+                    class="btn fa-solid fa-xmark fa-2x position-absolute border p-3 rounded-4"
+                  ></i>
+
+                  <h1>I'm a modal window</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </p>
                 </div>
               </div>
             </div>
@@ -782,6 +851,9 @@
     <footer class="foot d-none" id="foot"></footer>
     <!-- END OF REGION SECTION FOOTER -->
 
+    <div
+      class="overlay position-absolute top-0 start-0 w-100 h-100 d-none"
+    ></div>
     <!-- jq JS PATH -->
     <script src="JS/jquery-3.7.1.min.js"></script>
     <!-- JS Bootstrap path -->

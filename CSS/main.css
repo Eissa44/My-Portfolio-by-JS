@@ -448,6 +448,25 @@ circle {
   top: 0 !important;
 }
 
+#portfolio #close-info {
+  top: 1.2rem;
+  right: 2rem;
+  color: #333;
+  background: none;
+}
+
+#portfolio .project-info {
+  background-color: white;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  color: #303030 !important;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+}
 /* END OF REGION PORTFOLIO */
 
 /* START OF REGION CONTACT */

@@ -145,3 +145,39 @@ setInterval(() => {
     num.innerHTML = counter + "%";
   }
 }, 20);
+
+// Project Info
+const imgModel = document.querySelectorAll(".img-item");
+const projecIinfo = document.querySelector(".project-info");
+const closeInfo = document.getElementById("close-info");
+const overlay = document.querySelector(".overlay");
+const body = document.getElementById("over-event");
+
+const openModel = () => {
+  projecIinfo.classList.remove("d-none");
+  overlay.classList.remove("d-none");
+  // body.classList.add("overflow-hidden");
+};
+// openInfo();
+
+const closeModel = () => {
+  projecIinfo.classList.add("d-none");
+  overlay.classList.add("d-none");
+  // body.classList.remove("overflow-hidden");
+};
+
+for (let j = 0; j < imgModel.length; j++) {
+  imgModel[j].addEventListener("click", openModel);
+  closeInfo.addEventListener("click", closeModel);
+  overlay.addEventListener("click", closeModel);
+
+  document.addEventListener("keydown", (eventInfo) => {
+    // console.log(eventInfo.key);
+    if (
+      eventInfo.key === "Escape" &&
+      !projecIinfo.classList.contains("d-none")
+    ) {
+      closeModel();
+    }
+  });
+}
