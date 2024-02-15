@@ -56,6 +56,14 @@
   .form-btn {
     width: fit-content !important;
   }
+
+  #foot .right-content {
+    display: none !important;
+  }
+
+  #foot .left-content {
+    text-align: center !important;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -114,6 +122,14 @@
 
   .form-btn {
     width: fit-content !important;
+  }
+
+  #foot .right-content {
+    display: none !important;
+  }
+
+  #foot .left-content {
+    text-align: center !important;
   }
 }
 

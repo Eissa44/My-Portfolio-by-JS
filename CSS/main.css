@@ -500,3 +500,16 @@ circle {
   border-color: initial !important;
 }
 /* END OF REGION CONTACT */
+
+svg path {
+  fill: var(--primaryTextLight);
+}
+
+#foot {
+  background-color: var(--primaryTextLight);
+}
+
+#foot .right-content,
+#foot .left-content {
+  color: #303030;
+}
