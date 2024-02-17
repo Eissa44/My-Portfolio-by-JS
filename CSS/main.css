@@ -336,6 +336,14 @@
   text-wrap: pretty;
 }
 
+#about .card-body svg {
+  font-size: 3rem;
+}
+
+#about .card-body svg path {
+  fill: var(--primaryTextLight);
+}
+
 /* START OF REGION SKILLS PROGRESS  */
 .skill {
   width: 160px;
@@ -503,6 +511,7 @@ circle {
 
 svg path {
   fill: var(--primaryTextLight);
+  top: 50px !important;
 }
 
 #foot {
